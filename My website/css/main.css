@@ -9,7 +9,8 @@ body {
     justify-content: center;
     text-align: center;
     color: #000;
-    background:#213838;
+    background:#25373d;
+   
     padding: 80px;
     
   }
@@ -34,7 +35,7 @@ body {
   width: 100%;
   display: block;
   transition: top 0.3s;
-  background-color: #253f3f;
+  background-color: #25373d;
 }
 
 #navbar a {
@@ -50,7 +51,7 @@ body {
     font-weight: bold;
     text-shadow: 0 100px 0 #FFF,1px 76px 10px #000;
     color: #000;
-    background: #253f3f;
+    background: #25373d;
     
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -94,9 +95,11 @@ body {
   padding: 20px;
 }
 
+
+
 #footer {
   padding: 20px;
   text-align: center;
-  background: #213838;
+  background: #25373d;
 }
 

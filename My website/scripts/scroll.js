@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
 
         window.scrollBy({
             top: offsetPosition,
-            behavior: 'slow'
+            behavior: 'smooth'
             
         });
     });
