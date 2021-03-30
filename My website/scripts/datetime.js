@@ -17,7 +17,7 @@ function date_time()
   let minutes = zero_first_format(current_time.getMinutes());
   let seconds = zero_first_format(current_time.getSeconds());
   let week = new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота")
-  return "Дата: "+ year + "." + day + "." + month + " " + week[current_time.getDay()]  + "<br/>Время: " + hours + ":" + minutes + ":" + seconds
+  return "Дата: "+ year + "." + day + "." + month + "<br/>День недели - " + week[current_time.getDay()]  + "<br/>Время: " + hours + ":" + minutes + ":" + seconds
 }
 
 setInterval(function() {
