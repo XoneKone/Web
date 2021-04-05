@@ -4,9 +4,7 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
         e.preventDefault();
 
         let href = this.getAttribute('href').substring(1);
-
-        const scrollTarget = document.getElementById('href');
-            
+        const scrollTarget = document.getElementById(href);          
         const topOffset = 0;
         const elementPosition = scrollTarget.getBoundingClientRect().top;
         const offsetPosition = elementPosition - topOffset;
@@ -14,7 +12,6 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
         window.scrollBy({
             top: offsetPosition,
             behavior: 'smooth'
-            
         });
     });
 });

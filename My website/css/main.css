@@ -1,3 +1,8 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Proxima Nova Regular,Helvetica,san-serif;
   margin: 0;
@@ -23,7 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 25px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #FFF;
   justify-content: center;
   text-align: center;
@@ -112,11 +116,22 @@ body {
 #resume {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
+
 
 #bio {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+#hobby{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 #taskjs {
@@ -151,7 +166,7 @@ body {
 }
 
 .collapsible:after {
-  content: '\02795'; /* Символ юникода для знака "плюс" (+) */
+  content: '\02795'; 
   font-size: 13px;
   color: white;
   float: right;
@@ -159,7 +174,7 @@ body {
 }
 
 .active:after {
-  content: '\2796'; /* Символ юникода для знака "минус" (-) */
+  content: '\2796';
 }
 
 
@@ -197,6 +212,13 @@ body {
   width: 100%;
   background: #25373d;
 }
+
+#footer img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 
 
 
