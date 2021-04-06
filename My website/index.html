@@ -2,7 +2,9 @@
 <html>
 <head>
   <title>My site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
+ 
   <script src="scripts/datetime.js"></script>
   <script src="scripts/navbar.js"></script>
   <script src="scripts/scroll.js"></script>
@@ -47,18 +49,25 @@
    
    <button class="collapsible">Задание 2</button>
    <div class="content">
-    <div class="look-calendar">
-      <table id="calendar">
-        <thead>
-        <tr>
-        <td><b>‹</b>
-        <td colspan="5">
-        <td><b>›</b>
-        <tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
-        </thead>
-        <tbody></tbody>
-      </table>
-      </div>
+    <div id="month-calendar">
+      <ul class="month">
+          <li class="prev"><i class="fas fa-angle-double-left" aria-hidden="true"></i></li>
+          <li class="next"><i class="fas fa-angle-double-right" aria-hidden="true"></i></li>
+          <li class="month-name"></li>
+          <li class="year-name"></li>
+      </ul>
+      <ul class="weekdays">
+          <li>Пн</li>
+          <li>Вт</li>
+          <li>Ср</li>
+          <li>Чт</li>
+          <li>Пт</li>
+          <li>Сб</li>
+          <li>Вс</li>
+      </ul>
+      <ul class="days">
+      </ul>
+  </div>
    </div>
    
    <button class="collapsible">Задание 3</button>

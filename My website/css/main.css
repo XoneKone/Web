@@ -33,46 +33,94 @@ body {
   text-align: center;
 }
 
-.look-calendar {
-  width:220px;
-  height: 100%;
-  border:1px solid #c0c0c0;
-  padding:6px;
-  margin: 0 auto;    
-}
-#calendar {
+#month-calendar{
   width: 100%;
-  height: 160px;
-  line-height: 1.2em;
-  font-size: 15px;
+}
+
+.month{
+  margin: auto;
+  padding: 3rem 2rem 2rem;
+  background: #25373d;
   text-align: center;
-  border-spacing:0px;
+  width: 300px;
+  color: #ffffff;
+  list-style: none;
 }
-#calendar tr.dn td {
-  font-size: 15px;
+
+.month li{
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-#calendar thead tr:last-child {
-  font-size: small;
-  color: #FFF;
-}
-#calendar thead tr:nth-child(1) td:nth-child(2) {
-  color: #FFF;
-}
-#calendar thead tr:nth-child(1) td:nth-child(1):hover,
-#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+
+.month li.prev,
+.month li.next{
   cursor: pointer;
 }
-#calendar tbody td {
-  color: #97b1c7;
+
+.month li.prev{
+  float: left;
 }
-#calendar tbody td:nth-child(n+6),
-#calendar .holiday {
-  color: #e40013;
+
+.month li.next{
+  float: right;
 }
-#calendar tbody td.today {
-  background: #dc0000;
-  color: #fff;
+
+.month li.year-name{
+  font-size: 1.2rem;
+  font-weight: 400;
 }
+
+/* дни недели */
+.weekdays{
+  margin: auto;
+  padding: 1rem 0;
+  background-color: #dddddd;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+.weekdays li{
+  display: inline-block;
+  flex: 0 0 calc(100% / 7);
+  text-align: center;
+}
+
+/* дни */
+.days{
+  margin: 0;
+  padding: 1rem 0;
+  margin-bottom: 20px;
+  background-color: #eeeeee;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: flex-start;
+  height: 100%;
+}
+
+.days li{ 
+  list-style: none;
+  display: inline-block;
+  flex: 0 0 calc(100% / 7);
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+.days li.date-now{
+  color: #000;
+  font-weight: 700;
+} 
 
 #navbar {
   overflow:hidden;
@@ -139,7 +187,7 @@ body {
   flex-wrap: wrap;
   text-align: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   
 }
 
